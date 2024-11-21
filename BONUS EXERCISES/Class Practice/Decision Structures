@@ -1,0 +1,7 @@
+sales = int (input ("Enter Sales:"))
+bonus = 100
+if sales >  30000:
+     bonus = 300
+else :
+       bonus = 0
+print ("Your Bonus is "+str(bonus ))
