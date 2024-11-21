@@ -1,19 +1,12 @@
-#List of names
-names = ["Jake", "Zac", "Ian", "Ron", "Samm", "Dave"]
+names = ["Jake", "Zac", "Ian", "Ron", "Sam", "Dave"]
 
-#Name to search 
-target_name = "Samm"
+def search_names(names, search_term):
+    found = search_term in names
+    if found:
+        return f"'{search_term}' found in the list."
+    else:
+        return f"'{search_term}' not found in the list."
 
-#Flag to indicate if the name was found
-found =False
-
-#Iterate over the list and check for the target name
-for name in names:
-    if name == target_name:
-        found = True
-        break
-
-if found:
-    print(f"The name'{target_name}'was found in the list.")
-else:
-    print(f"The name'{target_name}'was not found in the list.")
+search_term = input("Enter the name to search: ")
+result = search_names(names, search_term)
+print(result)
