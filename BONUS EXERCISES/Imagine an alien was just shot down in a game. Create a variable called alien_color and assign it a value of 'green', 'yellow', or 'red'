@@ -1,0 +1,9 @@
+#Version1: Passes the if test(alien_color is 'green')
+alien_color ="green"
+if alien_color == "green":
+    print("wow!")
+
+#Version2: Fails the if test(alien_color is 'red')
+alien_color ="red"
+if alien_color =="green":
+    print("wow!")
