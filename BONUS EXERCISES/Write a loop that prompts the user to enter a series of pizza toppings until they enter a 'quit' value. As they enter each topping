@@ -1,0 +1,10 @@
+toppings = []
+while True:
+    topping = input("Enter a pizza topping ('quit' to finish): ")
+    if topping.lower()=='quit':
+      break
+    toppings.append(topping)
+    print(f"Added {topping} to your pizza.")
+print("\nYour pizza toppings:")
+for topping in toppings:
+    print(f"- {topping}")
