@@ -1,0 +1,3 @@
+names= ["John","Boby","Ashwin","Francis", "Tyson"]
+for i in range(len(names)):
+    print(f"Friend{i+1}: {names[i]}")
