@@ -1,0 +1,6 @@
+message = "Hello WORLD"
+print("Original Message:")
+print(message)
+message = "HI world"
+print("\nNew Message:")
+print(message)
