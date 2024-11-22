@@ -12,3 +12,25 @@ if qs1.lower() == ans.lower():
     print ("Correct!")
 else:
     print("Wrong!")
+# Advanced Program: European Capitals Quiz
+def european_capitals_quiz():
+    quiz_questions = {"France": "Paris",
+        "Germany": "Berlin",
+        "Italy": "Rome",
+        "Portugal": "Lisbon",
+        "Netherlands": "Amsterdam",
+        "Belgium": "Brussels",
+        "Austria": "Vienna",
+        "Switzerland": "Bern"}
+
+    score = 0
+    for country, capital in quiz_questions.items():
+        answer = input(f"What is the capital of {country}? ")
+        if answer.strip().lower() == capital.lower():
+            print("Correct!")
+            score += 1
+        else:
+            print(f"Incorrect. The capital of {country} is {capital}.")
+
+    print(f"\nQuiz finished! Your final score is {score}/{len(quiz_questions)}.")
+
